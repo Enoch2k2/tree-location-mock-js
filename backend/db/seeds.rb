@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Location.create([
+  {name: "Mount Sanitas", state: "Colorado", city: "Boulder", country: "USA"},
+  {name: "Smith Rock", state: "Oregon", city: "Bend", country: "USA"},
+  {name: "Koko Head Park", state: "Hawaii", city: "Honolulu", country: "USA"},
+  {name: "Camelback Mountain", state: "Arizona", city: "Scottsdale", country: "USA"}
+])
