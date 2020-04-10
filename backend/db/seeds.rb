@@ -6,9 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Location.create([
-  {name: "Mount Sanitas", state: "Colorado", city: "Boulder", country: "USA"},
-  {name: "Smith Rock", state: "Oregon", city: "Bend", country: "USA"},
-  {name: "Koko Head Park", state: "Hawaii", city: "Honolulu", country: "USA"},
-  {name: "Camelback Mountain", state: "Arizona", city: "Scottsdale", country: "USA"}
-])
+# Location.create([
+#   {name: "Mount Sanitas", state: "Colorado", city: "Boulder", country: "USA"},
+#   {name: "Smith Rock", state: "Oregon", city: "Bend", country: "USA"},
+#   {name: "Koko Head Park", state: "Hawaii", city: "Honolulu", country: "USA"},
+#   {name: "Camelback Mountain", state: "Arizona", city: "Scottsdale", country: "USA"}
+# ])
+
+# Tree.create([
+#   {name: "Ponderose Pine", tree_type: "Pine", height: "Tall"},
+#   {name: "Maple", tree_type: "Maple", height: "Medium"},
+#   {name: "Palm Tree", tree_type: "Palm", height: "Tall"},
+#   {name: "Cherry Blossom", tree_type: "Pretty", height: "Small"},
+#   {name: "Desert Willow", tree_type: "Pretty", height: "Medium"}
+# ])
