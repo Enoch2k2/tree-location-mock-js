@@ -20,3 +20,9 @@
 #   {name: "Cherry Blossom", tree_type: "Pretty", height: "Small"},
 #   {name: "Desert Willow", tree_type: "Pretty", height: "Medium"}
 # ])
+
+Location.find_by_id(1).update(tree_ids: [1, 2])
+Location.find_by_id(2).update(tree_ids: [1, 2, 3, 4])
+Location.find_by_id(3).update(tree_ids: [2, 3, 4])
+Location.find_by_id(4).update(tree_ids: [1, 5])
+Location.find_by_id(5).update(tree_ids: [1])

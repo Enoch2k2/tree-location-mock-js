@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_10_154241) do
+ActiveRecord::Schema.define(version: 2020_04_10_155019) do
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 2020_04_10_154241) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tree_locations", force: :cascade do |t|
+    t.integer "tree_id"
+    t.integer "location_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["location_id"], name: "index_tree_locations_on_location_id"
+    t.index ["tree_id"], name: "index_tree_locations_on_tree_id"
   end
 
   create_table "trees", force: :cascade do |t|
