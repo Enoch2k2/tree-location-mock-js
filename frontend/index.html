@@ -10,6 +10,32 @@
 <body>
   <h1>Tree App</h1>
 
+  <form id="tree-form">
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name">
+    </div>
+    <br>
+    <div>
+      <label for="tree_type">Tree Type: </label>
+      <input type="text" name="tree_type" id="tree_type">
+    </div>
+    <br>
+    <div>
+      <label for="height">Height: </label>
+      <input type="text" name="height" id="height">
+    </div>
+    <br>
+    <div id="location-checkboxes">
+
+    </div>
+    <br>
+    <input type="submit" value="Create Tree">
+  </form>
+
+  <div id="locations"></div>
+
+  <script src="javascripts/models/location.js"></script>
   <script src="javascripts/index.js"></script>
 </body>
 

@@ -16,9 +16,8 @@ class TreesController < ApplicationController
   # POST /trees
   def create
     @tree = Tree.new(tree_params)
-
     if @tree.save
-      render json: @tree, status: :created, location: @tree
+      render json: @tree, include: :locations, status: :created, location: @tree
     else
       render json: @tree.errors, status: :unprocessable_entity
     end
@@ -46,6 +45,6 @@ class TreesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tree_params
-      params.require(:tree).permit(:name, :tree_type, :height)
+      params.require(:tree).permit(:name, :tree_type, :height, location_ids: [])
     end
 end
